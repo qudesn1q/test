@@ -1,0 +1,1545 @@
+@font-face {
+  font-family: Attractive;
+  src: url(../fonts/Attractive-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBlack;
+  src: url(../fonts/RobotoBlack.ttf);
+}
+@font-face {
+  font-family: FiraSans-Light;
+  src: url(../fonts/FiraSans-Light.woff);
+}
+@font-face {
+  font-family: Panton-Black;
+  src: url(../fonts/Panton-Black.otf);
+}
+@font-face {
+  font-family: Panton-Regular;
+  src: url(../fonts/Panton-Regular.otf);
+}
+@font-face {
+  font-family: CocogooseCondensed-Letterpres;
+  src: url(../fonts/CocogooseCondensed-Letterpres.ttf);
+}
+body {
+  background: #18171F;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, audio, canvas, figure, footer, header, nav, section, video {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #D23F5E;
+}
+
+p {
+  font-family: FiraSans-Light, Calibri;
+  color: #484848;
+  /*font-style: normal;
+  font-weight: 300;*/
+  font-size: 16px;
+  line-height: 27px;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+@-moz-document url-prefix() {
+  h1, h2, h3, h4, h5, p {
+    font-weight: 400;
+  }
+}
+h1, h2 {
+  font-family: RobotoBlack, Calibri;
+  color: #323232;
+  font-size: 26px;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell, .mobi-cell {
+  display: table-cell;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.item360 {
+  width: 360px;
+  text-align: center;
+  border-radius: 2px;
+  /*overflow: hidden;*/
+}
+
+.block-headline {
+  text-align: center;
+  color: #D23F5E;
+  padding: 60px 0;
+  font-family: CocogooseCondensed-Letterpres, Calibri;
+  font-size: 40px;
+}
+
+.mobi, .mob-menu-box {
+  display: none;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+/*  ****************************** ******************************       404        ****************************** ******************************   */
+.body-404 {
+  background: #1b048c;
+  user-select: none;
+}
+
+.bg-404 {
+  width: 97%;
+  height: 97%;
+  position: absolute;
+  padding-left: 3vw;
+  padding-top: 2vh;
+  box-sizing: border-box;
+}
+
+.p-404 {
+  color: #f2ecec;
+  font-family: Consolas;
+  font-size: 1.1vw;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px #363434;
+  margin-bottom: 3vh;
+}
+
+/* ##############################       Top bar        ############################## */
+header {
+  position: absolute;
+  width: 1200px;
+  margin-left: -600px;
+  left: 50%;
+  height: 120px;
+  display: table;
+}
+
+.header-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav {
+  float: right;
+  font-family: Attractive,Calibri;
+  font-size: 18px;
+  color: #fff;
+}
+nav li {
+  display: inline;
+  margin-left: 36px;
+}
+nav li a {
+  color: inherit;
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+nav li a:hover {
+  color: #D23F5E;
+  cursor: pointer;
+  border-bottom: 1px solid #D23F5E;
+  padding-bottom: 10px;
+}
+
+/* ##############################       Main-bg        ############################## */
+.main-bg {
+  background: url(../img/main-bg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.headline {
+  width: 100%;
+  position: absolute;
+  top: 38%;
+  text-align: center;
+}
+
+.head-text-1, .head-text-2 {
+  color: #fff;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.head-text-1 {
+  font-family: Panton-Black, Calibri;
+  font-size: 54px;
+  margin-bottom: 1vh;
+}
+
+.head-text-2 {
+  font-family: Panton-Regular, Calibri;
+  font-size: 36px;
+}
+
+.head-btn {
+  display: block;
+  margin: 40px auto 0 auto;
+  padding: 15px 0;
+  width: 200px;
+  color: #fff;
+  background: #D23F5E;
+  font-family: Panton-Black, Calibri;
+  font-size: 20px;
+  border-radius: 2px;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.head-btn:hover {
+  -webkit-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+  -moz-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+  box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+}
+
+/* ##############################       Uslugi        ############################## */
+.services {
+  width: 100%;
+  background: #fff;
+  padding: 150px 0;
+}
+
+.img-service {
+  height: 100px;
+  width: 100px;
+}
+
+.h2-service {
+  padding: 20px 0;
+}
+
+/* ##############################       Works        ############################## */
+.works {
+  padding-bottom: 180px;
+}
+
+.work-card {
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.work-card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.55);
+  -moz-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.55);
+  box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.55);
+}
+
+.work-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.work-footer {
+  background: #fff;
+  height: 160px;
+  padding: 0 25px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  overflow: auto;
+}
+
+.h-work {
+  color: #D23F5E;
+  font-size: 22px;
+  padding: 15px 0;
+  font-family: Panton-Regular, Calibri;
+}
+
+.p-work {
+  font-family: Attractive, Calibri;
+  font-size: 16px;
+  line-height: 24px;
+  /*color: #707070;*/
+}
+
+/* ##############################       Prices        ############################## */
+.prices {
+  padding-bottom: 150px;
+  background: #fff;
+}
+
+.table-prices {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid #e0e0e0;
+}
+.table-prices td {
+  font-family: Attractive, FiraSans-Light, calibri;
+  font-size: 18px;
+  color: #484848;
+  padding: 4px 15px;
+  line-height: 1.4;
+}
+.table-prices th {
+  background: #D23F5E;
+  text-align: left;
+  padding: 10px 15px;
+  font-family: RobotoBlack, calibri;
+  font-size: 18px;
+  color: #fff;
+}
+
+.table-prices tr:nth-child(odd) {
+  background: #e0e0e0;
+}
+
+.table-prices tr:nth-child(even) {
+  background: #fff;
+}
+
+.table-prices tr {
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+.table-prices tr:hover {
+  background: #ffabbd;
+  cursor: default;
+}
+
+.th-left {
+  width: 84%;
+}
+
+.prices-note {
+  font-family: FiraSans-Light, Calibri;
+  font-size: 14px;
+  color: #B0B0B0;
+}
+
+/* ##############################       Contacts        ############################## */
+.contacts {
+  background: url(../img/contacts-bg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 970px;
+  position: relative;
+}
+
+.contacts-header-img, .contacts-header-text {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contacts-header-img {
+  width: 75px;
+  min-width: 75px;
+  /*min-width: 0.5vw;
+  max-width: 3.6vw;*/
+}
+
+.contacts-header-text {
+  color: #fff;
+  font-family: CocogooseCondensed-Letterpres, Calibri;
+  font-size: 30px;
+}
+.contacts-header-text a {
+  color: inherit;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.contacts-header-text a:hover, .contacts-header-text a:focus {
+  cursor: pointer;
+  color: #D23F5E;
+}
+
+.contacts-header-text-left {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.contacts-header-text-right {
+  text-align: right;
+  padding-right: 25px;
+}
+
+.mail-ico {
+  background: url(../img/contacts_mail-1.svg) no-repeat left;
+  background-size: contain;
+  height: 100%;
+}
+
+.vk-ico {
+  background: url(../img/contacts_vk-1.svg) no-repeat right;
+  background-size: contain;
+  height: 96%;
+  width: 96%;
+}
+
+.contact-item {
+  width: 568px;
+}
+
+/* ##############################       Form       ############################## */
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.fb-form {
+  margin-top: 54px;
+}
+
+.fb-input, .fb-text {
+  padding: 0 18px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  font-family: FiraSans-Light, Calibri;
+  font-size: 18px;
+  color: #E0E0E0;
+  background: rgba(180, 180, 180, 0.15);
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.fb-input:hover, .fb-input:focus, .fb-text:hover, .fb-text:focus {
+  background: rgba(15, 14, 24, 0.35);
+}
+.fb-input:focus, .fb-text:focus {
+  border: 2px solid #D23F5E;
+}
+
+.fb-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 64px;
+}
+
+.fb-input::-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.fb-input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.fb-text {
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding: 18px;
+  width: 100%;
+  height: 220px;
+  min-width: 100%;
+  max-height: 350px;
+}
+
+.fb-text::-moz-placeholder {
+  color: #a1a1a1;
+}
+
+.fb-text::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.fb-button {
+  display: inline-block;
+  padding: 10px 50px 15px 50px;
+  margin: 54px auto 0 auto;
+  border: 3px solid #D2A9A9;
+  border-radius: 2px;
+  background: none;
+  color: #fff;
+  font-family: Attractive, Calibri;
+  font-size: 22px;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.fb-button:hover, .fb-button:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+  -moz-box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+  box-shadow: 0px 0px 30px 12px rgba(255, 171, 189, 0.35);
+  background: #D2A9A9;
+}
+
+/* #########################       Overlay-thank-you       ######################## */
+.fb-done-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 3, 19, 0.75);
+  display: none;
+  z-index: 1001;
+}
+
+.fb-done-popup {
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8vh 5vh;
+  background-color: #1D1A2E;
+  border-radius: 6px;
+  color: #EFEFEF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.6vw;
+  font-family: CocogooseCondensed-Letterpres, Calibri;
+}
+
+.fb-done-img {
+  width: 6vw;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+
+/* ##############################       Footer       ############################## */
+footer {
+  width: 100%;
+  height: 68px;
+  background: #18171F;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-logo-box {
+  display: table-cell;
+  vertical-align: middle;
+  height: 68px;
+}
+
+.footer-logo {
+  width: 116px;
+}
+
+.footer-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  text-align: right;
+  font-family: Attractive, Calibri;
+  font-size: 16px;
+  color: #dedede;
+}
+
+/* ##############################       TO TOP BUTTON       ############################## */
+.totopbtn {
+  height: 50px;
+  width: 50px;
+}
+
+#toTop {
+  width: 45px;
+  position: fixed;
+  bottom: 50vh;
+  right: 2vw;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 0.5;
+  display: none;
+}
+
+#toTop:hover {
+  opacity: 1;
+}
+
+/* ##############################       END       ############################## */
+.mobi, .mobi-cell {
+  display: none;
+}
+
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START max-device-width : 1300px    / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    */
+/* ###################################################################################################################################################### */
+/*@media (max-width: 1024px) {*/
+@media only screen and (max-device-width: 1300px) {
+  p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  h1, h2 {
+    font-size: 23px;
+  }
+
+  .container-1200 {
+    width: 90vw;
+  }
+
+  .item360 {
+    width: 27vw;
+  }
+
+  .contact-item {
+    width: 47.5%;
+  }
+}
+/* ###################################################################################################################################################### */
+/*                                                             START max-device-width : 1199px                                                            */
+/* ###################################################################################################################################################### */
+@media only screen and (max-device-width: 1199px) {
+  .block-headline {
+    font-size: 36px;
+  }
+
+  /* ##############################       404        ############################## */
+  .p-404 {
+    font-size: 2vw;
+    margin-bottom: 3vh;
+  }
+
+  /* ##############################       Top bar        ############################## */
+  header {
+    width: 90vw;
+    margin-left: -45vw;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  /* ##############################       Main-bg        ############################## */
+  .head-text-1 {
+    font-size: 44px;
+  }
+
+  .head-text-2 {
+    font-size: 30px;
+  }
+
+  .head-btn {
+    margin-top: 26px;
+    padding: 12px 0;
+    width: 17vw;
+    font-size: 18px;
+  }
+
+  /* ##############################       Uslugi        ############################## */
+  .services {
+    padding: 20vh 0;
+  }
+
+  .img-service {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* ##############################       Works        ############################## */
+  .work-header {
+    height: 154px;
+  }
+
+  .h-work {
+    font-size: 20px;
+  }
+
+  .p-work {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* ##############################       Prices        ############################## */
+  .table-prices td {
+    font-size: 16px;
+  }
+  .table-prices th {
+    font-size: 16px;
+  }
+
+  /* ##############################       Contacts        ############################## */
+  .contacts {
+    height: 100vh;
+  }
+
+  .contacts-header-img, .contacts-header-text {
+    height: 54px;
+  }
+
+  .contacts-header-img {
+    width: 7vw;
+    min-width: 6vw;
+	/*min-width: 3vw;*/
+  }
+
+  .contacts-header-text {
+    font-size: 2.3vw;
+  }
+
+  .contacts-header-text-left {
+    padding-left: 10px;
+  }
+
+  .contacts-header-text-right {
+    padding-right: 10px;
+  }
+
+  /* ##############################       Form       ############################## */
+  .fb-form {
+    margin-top: 40px;
+  }
+
+  .fb-input, .fb-text {
+    font-size: 18px;
+  }
+
+  .fb-input {
+    height: 54px;
+  }
+
+  .fb-text {
+    margin-top: 40px;
+    height: 150px;
+    min-height: 100px;
+    max-height: 350px;
+  }
+
+  .fb-button {
+    padding: 12px 50px 16px 50px;
+    margin: 40px auto 0 auto;
+    font-size: 18px;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START vertical screens    / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    */
+/* ###################################################################################################################################################### */
+@media only screen and (orientation: portrait) {
+  .fb-input {
+    width: 100%;
+  }
+
+  .fb-text {
+    max-height: 50vh;
+    height: 40vh;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START 0px / 850px     / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \   */
+/* ###################################################################################################################################################### */
+@media (max-device-width: 850px) {
+  p {
+    font-size: 14px;
+  }
+
+  .deskt {
+    display: none;
+  }
+
+  .mobi, .mob-menu-box {
+    display: block;
+  }
+
+  .mobi-cell {
+    display: table-cell;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .container-1200 {
+    width: 84vw;
+  }
+
+  .item360 {
+    width: 84vw;
+    margin: 1vh 0 6vh 0;
+  }
+
+  .block-headline {
+    width: 84vw;
+    text-align: left;
+    margin-left: 8vw;
+    font-size: 20px;
+    padding: 4vh 0;
+  }
+
+  /*  ****************************** ******************************     Mobile menu        ****************************** ******************************   */
+  .mob-menu-box {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .menu-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18171F;
+    transform: translateX(100%);
+    transition: .3s;
+    /*********************/
+    position: absolute;
+    z-index: 999;
+  }
+
+  .menu-wrapper_active {
+    transform: translateX(0);
+  }
+
+  .menu-logo-top {
+    background: url(../img/logo-svg.svg) no-repeat top;
+    background-size: contain;
+    width: 33vw;
+    height: 6vh;
+    position: absolute;
+    top: 4vh;
+    left: 8vw;
+  }
+
+  .hamburger {
+    background: url(../img/burger-menu.svg) no-repeat center;
+    background-size: contain;
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    top: 3.4vh;
+    right: 8vw;
+    cursor: pointer;
+    /*transition: .2s; не работает! баг*/
+    z-index: 9999;
+  }
+
+  .hamburger_active {
+    background: url(../img/exit-menu.svg) no-repeat center;
+    background-size: 8vw;
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .menu-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu-wrapper li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 6vh;
+    display: list-item;
+  }
+
+  .menu-wrapper li a {
+    font-family: Attractive, Calibri;
+    font-size: 7vw;
+    color: #fff;
+    padding-left: 16vw;
+    text-decoration: none;
+  }
+
+  .menu-logo-bot {
+    background: url(../img/logo-svg.svg) no-repeat center;
+    background-size: contain;
+    width: 30vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 3vh;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* ##############################       Top bar        ############################## */
+  header {
+    width: 84vw;
+    margin-left: -42vw;
+    height: 94px;
+  }
+
+  .logo {
+    height: 10vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* ##############################       Main-bg        ############################## */
+  .main-bg {
+    background-position: 41% 50%;
+  }
+
+  .headline {
+    width: 84vw;
+    top: 36%;
+    left: 8vw;
+    text-align: left;
+  }
+
+  .head-text-1 {
+    font-size: 11vw;
+    line-height: 11.5vw;
+    margin-bottom: 3vh;
+  }
+
+  .head-text-2 {
+    font-size: 26px;
+  }
+
+  .head-btn {
+    text-align: center;
+    width: 42vw;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  /* ##############################       Uslugi        ############################## */
+  .services {
+    padding: 0;
+    padding-bottom: 8vh;
+  }
+
+  /* ##############################       Works        ############################## */
+  .works {
+    padding-bottom: 8vh;
+  }
+
+  /* ##############################       Prices        ############################## */
+  .prices {
+    padding-bottom: 60px;
+  }
+
+  .table-prices td {
+    font-size: 14px;
+    height: 7vh;
+  }
+  .table-prices th {
+    font-size: 14px;
+  }
+
+  .prices-note {
+    padding-top: 2px;
+    font-family: FiraSans-Light, Calibri;
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  /* ##############################       Contacts        ############################## */
+  .contacts {
+    background: linear-gradient(101.23deg, #302D40 0.73%, #18171F 67.2%);
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .wave {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../img/wave-1.svg) no-repeat top right;
+    background-size: contain;
+    width: 100%;
+    height: 8vh;
+  }
+
+  .contact-item-0 {
+    margin: 0.5vh 0;
+  }
+
+  .contact-item {
+    margin: 1vh 0;
+  }
+
+  .contacts-header-img, .contacts-header-text {
+    height: 54px;
+  }
+
+  .contacts-header-img {
+    width: 15vw;
+	max-width: 15vw;
+  }
+
+  .contacts-header-text {
+    font-size: 7vw;
+    text-align: right;
+  }
+
+  .contacts-header-text-left {
+    padding-left: 10px;
+  }
+
+  .contacts-header-text-right {
+    padding-right: 10px;
+  }
+
+  .vk-ico {
+    background-position: left;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+
+  /* ##############################       Form       ############################## */
+  .fb-form {
+    margin-top: 4vh;
+    padding-bottom: 25vh;
+  }
+
+  .fb-input, .fb-text {
+    font-size: 16px;
+    border: 1px solid #fff;
+  }
+
+  .fb-input {
+    width: 100%;
+  }
+
+  .fb-text {
+    margin-top: 1vh;
+    max-width: 84vw;
+    max-height: 50vh;
+  }
+
+  .fb-button {
+    margin-top: 2vh;
+    width: 100%;
+    border: 2px solid #D2A9A9;
+  }
+
+  /* ##############################     Overlay-thank-you       ###################### */
+  .fb-done-popup {
+    border-radius: 8px;
+    width: 90vw;
+    height: auto;
+    min-height: 25vh;
+    padding: 6vh 1vw;
+    font-size: 4vw;
+  }
+
+  .fb-done-img {
+    width: 16vw;
+  }
+
+  /* ##############################       Footer       ############################## */
+  footer {
+    background: none;
+    height: auto;
+  }
+
+  .footer-logo-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 3vh;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 34vw;
+    margin: 0 auto;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START 500px /  850px     / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \   */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \      tablets (and landscape smartphones)     / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ /  */
+/* ###################################################################################################################################################### */
+@media (min-device-width: 500px) and (max-device-width: 850px) {
+  .notab {
+    display: none;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2 {
+    font-size: 3.2vw;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+  .item360 {
+    width: 40vw;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .container-1200 {
+    width: 84vw;
+  }
+
+  br {
+    display: none;
+  }
+
+  .block-headline {
+    font-size: 4.6vw;
+  }
+
+  /* ##############################       Mobile menu        ############################## */
+  .menu-logo-top {
+    width: 25vw;
+    height: 7vh;
+  }
+
+  .hamburger {
+    width: 8vw;
+    height: 8vw;
+    top: 3.6vh;
+  }
+
+  .hamburger_active {
+    background-size: 5vw;
+    width: 8vw;
+    height: 8vw;
+  }
+
+  /* ##############################       Top bar        ############################## */
+  .logo {
+    height: 6vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* ##############################       Main-bg        ############################## */
+  .head-text-1 {
+    font-size: 9.5vw;
+    line-height: 10.5vw;
+    margin-bottom: 1vh;
+  }
+
+  .head-text-2 {
+    font-size: 5.4vw;
+    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .head-btn {
+    padding: 20px 0;
+    width: 32vw;
+    font-size: 3.2vw;
+    margin-top: 4vh;
+  }
+
+  /* ##############################       Uslugi        ############################## */
+  .services {
+    height: auto;
+    padding: 18vh 0;
+  }
+
+  .img-service {
+    height: 90px;
+    width: 90px;
+  }
+
+  /* ##############################       Works        ############################## */
+  .h-work {
+    font-size: 3vw;
+  }
+
+  .p-work {
+    font-size: 2.2vw;
+    line-height: 3vw;
+  }
+
+  /* ##############################       Prices        ############################## */
+  .prices {
+    padding-bottom: 100px;
+  }
+
+  .table-prices td {
+    font-size: 18px;
+    height: 5vh;
+  }
+  .table-prices th {
+    font-size: 18px;
+  }
+
+  /* ##############################       Contacts        ############################## */
+  .contacts-header-img, .contacts-header-text {
+    height: 7.6vh;
+  }
+
+  .contacts-header-text {
+    font-size: 5vw;
+    text-align: right;
+  }
+
+  .contact-item-0 {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  /* ##############################        Form        ################################# */
+  .fb-form {
+    margin-top: 0;
+    padding-bottom: 20vh;
+  }
+
+  .fb-input {
+    height: 6vh;
+  }
+
+  .fb-input, .fb-text {
+    font-size: 18px;
+  }
+
+  .fb-text {
+    height: 20vh;
+    min-height: 15vh;
+  }
+
+  .fb-button {
+    font-size: 3.2vw;
+    border: 3px solid #D2A9A9;
+  }
+
+  /* ##############################       Footer       ############################## */
+  .footer-logo {
+    width: 26vw;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START landscape / 825px     / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ /  */
+/* ###################################################################################################################################################### */
+@media (max-device-width: 825px) and (orientation: landscape) {
+  p {
+    font-size: 2vw;
+  }
+
+  h1, h2 {
+    font-size: 3vw;
+  }
+
+  /* ##############################       404       landscape 820px */
+  .bg-404 {
+    width: 98%;
+    height: 98%;
+    padding-top: 3vh;
+  }
+
+  .p-404 {
+    font-size: 1.4vw;
+  }
+
+  /* ##############################       Mobile menu       landscape 820px */
+  .menu-logo-top {
+    height: 9vh;
+    background-position: left;
+    top: 5.5vh;
+  }
+
+  .hamburger {
+    width: 12vh;
+    height: 12vh;
+  }
+
+  .hamburger_active {
+    background-size: 8vh;
+    width: 9vh;
+    height: 9vh;
+    top: 6vh;
+    right: 8.8vw;
+  }
+
+  .menu-wrapper li {
+    line-height: 9vh;
+  }
+
+  .menu-wrapper li a {
+    font-size: 4vw;
+  }
+
+  .menu-logo-bot {
+    height: 9vh;
+    bottom: 5vh;
+  }
+
+  /* ##############################       Main-bg        landscape 820px  */
+  .head-text-1 {
+    font-size: 5vw;
+    line-height: 9vh;
+  }
+
+  .head-text-2 {
+    font-size: 3.5vw;
+  }
+
+  .head-btn {
+    width: 22vw;
+    font-size: 2.4vw;
+    margin-top: 9vh;
+    padding: 4vh 0;
+  }
+
+  /* ##############################       Uslugi        landscape 820px  */
+  .services {
+    padding: 14vh 0 5vh 0;
+  }
+
+  .img-service {
+    width: 19vh;
+    height: 19vh;
+  }
+
+  .h2-service {
+    padding: 3.6vh 0;
+  }
+
+  /* ##############################       Works        landscape 820px  */
+  .h-work {
+    font-size: 2.5vw;
+    padding: 3vh 0;
+  }
+
+  .p-work {
+    font-size: 1.8vw;
+    line-height: normal;
+  }
+
+  .block-headline {
+    padding: 6vh 0;
+    font-size: 3.4vw;
+  }
+
+  .work-footer {
+    height: 35vh;
+  }
+
+  /* ##############################       Prices        landscape 820px  */
+  .prices {
+    padding-bottom: 10vh;
+  }
+
+  .table-prices td {
+    font-size: 2vw;
+  }
+  .table-prices th {
+    font-size: 2.4vw;
+  }
+
+  /* ##############################       Contacts        landscape 820px  */
+  .contacts-header-img {
+    height: 12vh;
+  }
+
+  .contacts-header-text {
+    font-size: 4vw;
+  }
+
+  /* ##############################        Form        landscape 820px  */
+  .fb-form {
+    padding-top: 5vh;
+    padding-bottom: 50vh;
+  }
+
+  .fb-input {
+    height: 12vh;
+  }
+
+  .fb-input, .fb-text {
+    font-size: 2.2vw;
+    margin-bottom: 1vh;
+  }
+
+  .fb-text {
+    height: 40vh;
+  }
+
+  .fb-button {
+    font-size: 3vw;
+    margin-top: 5vh;
+    height: auto;
+  }
+
+  /* ##############################       Footer       landscape 820px  */
+  .footer-logo {
+    width: 20vw;
+  }
+
+  .footer-text {
+    font-size: 1.8vw;
+  }
+
+  footer {
+    padding-bottom: 2vh;
+  }
+
+  #toTop {
+    bottom: 45vh;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START 480px    / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \   */
+/* ###################################################################################################################################################### */
+@media (max-width: 480px) {
+  .bg-404 {
+    width: 98%;
+    height: 98%;
+  }
+
+  .p-404 {
+    font-size: 2vw;
+    line-height: 2;
+    margin-bottom: 2vh;
+  }
+
+  .fb-button {
+    font-size: 5.2vw;
+  }
+  
+  .vk-ico {
+    height: 100%;
+    width: 100%;
+}
+  /* ##############################     Overlay-thank-you       ###################### */
+  .fb-done-popup {
+    min-height: 16vh;
+  }
+}
+/* ###################################################################################################################################################### */
+/*  / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \    START 275px    / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \   */
+/* ###################################################################################################################################################### */
+@media (max-width: 275px) {
+  p {
+    font-size: 5vw;
+    line-height: 1.7;
+  }
+
+  .h2-service {
+    font-size: 9vw;
+  }
+
+  /* ##############################       Main-bg        275px */
+  .head-text-1 {
+    font-size: 11vw;
+  }
+
+  .head-text-2 {
+    font-size: 8vw;
+  }
+
+  .head-btn {
+    padding: 2vh 5vw;
+    font-size: 6vw;
+    margin-top: 5vh;
+  }
+
+  .img-service {
+    max-height: 30vw;
+    max-width: 30vw;
+  }
+
+  .h-work {
+    font-size: 7vw;
+  }
+
+  .p-work {
+    font-size: 5vw;
+    line-height: 1.4;
+  }
+
+  .table-prices {
+    max-width: 60vw;
+  }
+  .table-prices th {
+    max-width: 30vw;
+    font-size: 6vw;
+  }
+  .table-prices td {
+    max-width: 30vw;
+    font-size: 4vw;
+  }
+
+  .prices-note {
+    font-size: 3vw;
+  }
+
+  .block-headline {
+    position: relative;
+  }
+
+  .fb-input, .fb-text {
+    font-size: 5vw;
+    height: 9vh;
+  }
+
+  .fb-button {
+    padding: 2vh 0;
+    font-size: 8vw;
+  }
+
+  .footer-text {
+    font-size: 4vw;
+    line-height: normal;
+  }
+
+  /* ##############################       totopbtn        275px */
+  #toTop {
+    right: -5vw;
+  }
+
+  .totopbtn {
+    width: 15vw;
+    height: 15vw;
+  }
+}
